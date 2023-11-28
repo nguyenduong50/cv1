@@ -1,0 +1,313 @@
+/*-----------------------*/
+/*------- Setup page -------*/
+/*-----------------------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/*-----------------------*/
+/*------- General -------*/
+/*-----------------------*/
+
+ul li{
+    list-style: none;
+}
+
+
+li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------- Main Component -------*/
+
+.cv-document {
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+    z-index: 1;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+    padding: 40px
+}
+
+/*------- Clear fix -------*/
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------- Section -------*/
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(39, 38, 38, 0.7);
+}
+
+.section-content{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+    text-align: justify;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(107, 105, 105, 0.438);
+}
+
+.section-content ul, .section-content ol{
+    margin-left: 20px;
+}
+
+.section::before {
+    content: '';
+    display: block;
+    height: 75px;
+    margin-top: -75px;
+    visibility: hidden;
+}
+
+/*------- Time point -------*/
+
+.time-point, .time-content{
+    display: inline-block;
+}
+
+.time-point{
+    width: 25%;
+    vertical-align: top;
+}
+
+.time-content{
+    width: 70%;
+    vertical-align: top;
+    border-bottom: 10px solid transparent;
+}
+
+/*------- Timeline -------*/
+
+ul.time-line > li::before{
+    content: '';
+    background-color: #0f0f0f;
+    position: absolute;
+    bottom: 0px;
+    top: -10px;
+    left: 5px;
+    width: 4px;
+}
+
+ul.time-line > li::after{
+    content: '';
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    height: 12px;
+    width: 12px;
+}
+
+ul.time-line li{
+    padding-left: 20px;
+}
+
+/*-----------------------*/
+/*------- Header -------*/
+/*-----------------------*/
+
+.top-header{
+    height: 70px;
+    line-height: 70px;
+    background: linear-gradient(45deg, rgba(2,33,64, 0.8) 35%, rgba(45,95,93,0.8));
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.top-header h1{
+    margin-left: 50px;
+    float: left;
+}
+
+.top-header h1 a{
+    color: #fff;
+}
+
+#avatar img{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 60px;
+}
+
+#avatar{
+    cursor: pointer;
+    float: right;
+    width: 180px;
+    padding-top: 5px;
+    margin-right: 10px;
+    
+}
+
+/*------- Menu -------*/
+#menu{
+    float: right;
+    background-color: #fff;
+    width: 180px;
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    display: none;
+}
+
+#menu li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+#menu li a{
+    display: block;
+    color: #000;
+}
+
+#menu li a:hover{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+#avatar:hover #menu{
+    display: block;
+}
+
+/*-----------------------*/
+/*------- Info -------*/
+/*-----------------------*/
+
+#info-details{
+    float: left;
+}
+
+#info-avatar{
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-image: url(/images/avatar.png);
+    background-size: cover;
+}
+
+#info-details h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0e2452;
+}
+
+#info-details table tr{
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    
+}
+
+#info-details table tr > td:first-child{
+    width: 120px;
+    font-weight: bold;
+}
+
+/*-----------------------*/
+/*------- Target -------*/
+/*-----------------------*/
+
+#target .section-content{
+    border: none;
+}
+
+/*-----------------------*/
+/*------- Skill -------*/
+/*-----------------------*/
+
+.skill-title, .skil-content{
+    display: inline-block;
+}
+
+.skill-title{
+    width: 25%;
+    font-weight: bold;
+}
+
+.skill-content{
+    width: 70%;
+
+}
+
+/*-----------------------*/
+/*------- Hobby -------*/
+/*-----------------------*/
+
+#hobby .section-content{
+    border: none;
+
+}
+
+#hobby ul li{
+    list-style-type: disc;
+}
+
+/*-----------------------*/
+/*------- Project -------*/
+/*-----------------------*/
+
+#project ul li > span:first-child{
+    font-weight: bold;
+}
+
+#project ul li{
+    list-style: disc;
+}
+
+/*-----------------------*/
+/*------- Contact -------*/
+/*-----------------------*/
+
+#contact ol li a{
+    color: rgb(11, 46, 240);
+}

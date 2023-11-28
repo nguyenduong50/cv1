@@ -1,0 +1,256 @@
+/*-----------------------*/
+/*------- Setup page -------*/
+/*-----------------------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/*-----------------------*/
+/*------- General -------*/
+/*-----------------------*/
+
+ul li{
+    list-style: none;
+}
+
+
+li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------- Main Component -------*/
+
+.cv-document {
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+    z-index: 1;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+    padding: 40px
+}
+
+/*------- Clear fix -------*/
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------- Section -------*/
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(39, 38, 38, 0.7);
+}
+
+.section-content{
+    margin-top: 10px;
+    color: #000;
+    text-align: justify;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(107, 105, 105, 0.438);
+}
+
+.section-content ul, .section-content ol{
+    margin-left: 20px;
+}
+
+.section::before {
+    content: '';
+    display: block;
+    height: 75px;
+    margin-top: -75px;
+    visibility: hidden;
+}
+
+/*------- Timeline -------*/
+
+ul.time-line > li::before{
+    content: '';
+    background-color: #0f0f0f;
+    position: absolute;
+    bottom: 0px;
+    top: -10px;
+    left: 5px;
+    width: 4px;
+}
+
+ul.time-line > li::after{
+    content: '';
+    background-color: #0f0f0f;
+    border: 1px solid #0f0f0f;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    height: 12px;
+    width: 12px;
+}
+
+ul.time-line li{
+    padding-left: 20px;
+}
+
+/*------- Time point -------*/
+
+.time-point, .time-content{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.time-point{
+    width: 25%;
+    vertical-align: top;
+}
+
+/*------- Time content -------*/
+
+.time-content{
+    width: 70%;
+    vertical-align: top;
+    border-bottom: 10px solid transparent;
+}
+
+.time-content h4{
+    font-size: 18px;
+}
+
+/*-----------------------*/
+/*------- Info -------*/
+/*-----------------------*/
+
+#info-details{
+    float: left;
+}
+
+#info-avatar{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+#info-details h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0e2452;
+}
+
+#info-details table tr{
+    height: 40px;
+    font-size: 16px;
+    color: black;
+    
+}
+
+#info-details table tr > td:first-child{
+    width: 120px;
+    font-weight: bold;
+}
+
+/*-----------------------*/
+/*------- Target -------*/
+/*-----------------------*/
+
+#target .section-content{
+    border: none;
+}
+
+#target p{
+    font-size: 15px;
+}
+
+/*-----------------------*/
+/*------- Skill -------*/
+/*-----------------------*/
+
+#skill .section-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* gap: 2%; */
+}
+
+#skill .skill-title{
+    width: 20%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#skill .skill-content{
+    width: 80%;
+    font-size: 15px;
+}
+
+/*-----------------------*/
+/*------- Project -------*/
+/*-----------------------*/
+
+#project ul li > span:first-child{
+    font-weight: bold;
+}
+
+#project ul li{
+    list-style: disc;
+    font-size: 15px;
+}
+
+#project h4{ 
+    font-size: 17px;
+}
+
+/*-----------------------*/
+/*------- Education -------*/
+/*-----------------------*/
+
+#education{
+
+}
+
+/*-----------------------*/
+/*------- Contact -------*/
+/*-----------------------*/
+
+#contact ol li a{
+    color: rgb(11, 46, 240);
+}
