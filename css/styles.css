@@ -85,7 +85,8 @@ a{
 }
 
 .section-content{
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
     color: #000;
     text-align: justify;
     line-height: 30px;
@@ -94,6 +95,7 @@ a{
 
 .section-content ul, .section-content ol{
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .section::before {
