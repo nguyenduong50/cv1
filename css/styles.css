@@ -104,6 +104,10 @@ a{
     visibility: hidden;
 }
 
+.section-content > h4 {
+    text-transform: uppercase;
+}
+
 /*------- Timeline -------*/
 
 ul.time-line > li::before{
