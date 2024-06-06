@@ -246,8 +246,15 @@ ul.time-line li{
 }
 
 /*-----------------------*/
-/*------- Education -------*/
+/*------- Certificate -------*/
 /*-----------------------*/
+
+#certificate-images{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+    margin-bottom: 20px;
+}
 
 /*-----------------------*/
 /*------- Contact -------*/
