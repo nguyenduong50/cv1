@@ -249,11 +249,38 @@ ul.time-line li{
 /*------- Certificate -------*/
 /*-----------------------*/
 
+#certificate > h2{
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(39, 38, 38, 0.7);
+}
+
 #certificate-images{
     display: grid;
     grid-template-columns: 49% 49%;
     column-gap: 2%;
     margin-bottom: 20px;
+}
+
+.certificate-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+}
+
+.certificate-item > a{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.certificate-name{
+    width: 50%;
 }
 
 /*-----------------------*/
